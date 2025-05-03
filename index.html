@@ -1,1 +1,196 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>📈 LSTM1: Stock Market Prediction Using Deep Learning</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background-color: #fff;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #eaeaea;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img.screenshot {
+      width: 100%;
+      max-width: 800px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📈 LSTM1: Stock Market Prediction Using Deep Learning</h1>
+
+  <p>This project is about predicting stock prices using deep learning. I used models like LSTM, RNN, and BiLSTM. I collected stock data, trained models, tested predictions, and built a simple recommendation system.</p>
+
+  <h2>🔍 What This Project Does</h2>
+  <p>The project gets stock data from Yahoo Finance. Then it tries different models to see which one predicts stock prices the best. After that, it gives suggestions based on the predictions.</p>
+
+  <h2>👩‍💻 What I Did</h2>
+  <ul>
+    <li>I made a script to get stock prices using the Yahoo Finance API.</li>
+    <li>I tested three models (LSTM, RNN, BiLSTM) on Apple (AAPL) stock.</li>
+    <li>I saw that the RNN model gave the best results. It followed the trend well.</li>
+    <li>I finished the LSTM model and used it for recommendations.</li>
+    <li>I improved the backtesting system to check if the predictions were working or not.</li>
+  </ul>
+
+  <h2>✅ Sprint Work Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Sprint</th>
+        <th>Task ID(s)</th>
+        <th>What I Did</th>
+        <th>Est. Hours</th>
+        <th>Actual Hours</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>#294, #327</td>
+        <td>I set up data collection using Yahoo Finance</td>
+        <td>15</td>
+        <td>–</td>
+        <td>✅ Done</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>#376</td>
+        <td>I tested LSTM, RNN, BiLSTM on AAPL stock</td>
+        <td>25</td>
+        <td>27</td>
+        <td>✅ Done</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>#532</td>
+        <td>I finished the LSTM recommendation system</td>
+        <td>18</td>
+        <td>19</td>
+        <td>✅ Done</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>#563</td>
+        <td>I updated the backtesting to test predictions</td>
+        <td>20</td>
+        <td>22</td>
+        <td>✅ Done</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>🧾 Task Details</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Task ID</th>
+        <th>Task Description</th>
+        <th>User Story</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>#294</td>
+        <td>I used Yahoo Finance to get stock data</td>
+        <td><a href="https://github.com/Rivier-Computer-Science/AI-Agent-Stock-Prediction/issues/282">#282</a></td>
+      </tr>
+      <tr>
+        <td>#327</td>
+        <td>I added error checks for the data</td>
+        <td>#282</td>
+      </tr>
+      <tr>
+        <td>#376</td>
+        <td>I tested LSTM, RNN, BiLSTM on Apple stock</td>
+        <td>#282</td>
+      </tr>
+      <tr>
+        <td>#532</td>
+        <td>I used LSTM to make stock suggestions</td>
+        <td>#282</td>
+      </tr>
+      <tr>
+        <td>#563</td>
+        <td>I updated backtesting to check predictions</td>
+        <td>#282</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2> Screenshots</h2>
+
+
+  <img src="r1.png" alt="Model Code" class="screenshot">
+  <img src="r2.PNG" alt="Model Output Graph" class="screenshot">
+  <img src="r3.PNG" alt="Prediction Comparison" class="screenshot">
+
+  <h2>📎 Appendix</h2>
+
+  <h3>📘 User Story</h3>
+  <p><a href="https://github.com/Rivier-Computer-Science/AI-Agent-Stock-Prediction/issues/282">User Story #282 – Stock Prediction Agent</a>:  
+  <em>As a user, I want to see stock predictions using AI so I can make better choices.</em></p>
+
+  <h3>🕒 My Commit History</h3>
+  <ul>
+    <li><a href="https://github.com/HarikaSivalinga/AI-Agent-Stock-Prediction/commit/355f09aa67cd652d9e0a16481437a004d587b3a2">355f09a</a>: I added code to get stock data from Yahoo Finance – Feb 2, 2025</li>
+    <li><a href="https://github.com/HarikaSivalinga/AI-Agent-Stock-Prediction/commit/002c16a09b4cd5a4c2d8cf3eb9770ebf2ee1bd0c">002c16a</a>: I tested 3 models and found RNN worked best – Mar 1, 2025</li>
+    <li><a href="https://github.com/HarikaSivalinga/AI-Agent-Stock-Prediction/commit/eed8b8318e296ba1df1f0c6a7d1ea43628b46094">eed8b83</a>: More testing on models – Mar 1, 2025</li>
+    <li><a href="https://github.com/HarikaSivalinga/AI-Agent-Stock-Prediction/commit/0b4c47ed7e01bd302aa3db694c68fa552b5fe11f">0b4c47e</a>: I added LSTM recommendation system – Mar 24, 2025</li>
+    <li><a href="https://github.com/HarikaSivalinga/AI-Agent-Stock-Prediction/commit/ff8df4d5b86bd9b9c3658854790c799d2a45ea2c">ff8df4d</a>: I improved the backtesting system – Apr 20, 2025</li>
+  </ul>
+
+  <p>🔗 <a href="https://github.com/HarikaSivalinga/AI-Agent-Stock-Prediction">See My GitHub Repo</a></p>
+
+</body>
+</html>
